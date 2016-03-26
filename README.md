@@ -29,7 +29,7 @@ for our overflow attack.
 ```sh
 ./hex2raw < some_exploit_level.exploit > some_exploit_level.raw
 ```
-e.g. To generate level 1: `Sparkler`:
+E.g. To generate level 1: `Sparkler`:
 ```sh
 ./hex2raw < sparkler.exploit > sparkler.raw
 ```
@@ -39,7 +39,7 @@ After the raw file is generated, it can then be run against the given executable
 ```sh
 ./bufbomb -u net_id < some_exploit_level.raw
 ```
-e.g. Running our sparkler exploit against the executable
+E.g. Running our sparkler exploit against the executable
 ```sh
 ./bufbomb -u jy1299 < sparkler.raw
 ```
@@ -47,7 +47,7 @@ e.g. Running our sparkler exploit against the executable
 When the correct raw file is generated, tested locally, and is successful, 
 it can then be sent to the scoring server with the `-s` flag
 
-e.g. Running and sending the sparkler exploit to the server
+E.g. Running and sending the sparkler exploit to the server
 ```sh
 ./hex2raw < sparkler.exploit > sparkler.raw
 ./bufbomb -u jy1299 -s < sparkler.raw
